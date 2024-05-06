@@ -10,6 +10,7 @@ int main() {
             for (int i = 0; i < c; i++) {
                 data2[i] = data[i];
                 *data = *data2;
+                free(data);
             }
         }
         data[c] = num;
