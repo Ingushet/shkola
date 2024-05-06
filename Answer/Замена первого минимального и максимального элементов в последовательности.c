@@ -12,15 +12,15 @@ int main() {
                 *data = *data2;
             }
         }
-    data[c] = num;
+        data[c] = num;
         c++;
     }
-    tmax=tmin=0;
-    for(int i = 0; i < c; i++){
-        if (data[i] < data[tmin]){
+    tmax = tmin = 0;
+    for (int i = 0; i < c; i++) {
+        if (data[i] < data[tmin]) {
             tmin = i;
         }
-        if (data[i] > data[tmax]){
+        if (data[i] > data[tmax]) {
             tmax = i;
         }
     }
