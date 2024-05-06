@@ -9,9 +9,9 @@ int main() {
             int *data2 = malloc(sizeof(int) * mass);
             for (int i = 0; i < c; i++) {
                 data2[i] = data[i];
-                free(data);
-                data = data2;
             }
+            free(data);
+            data = data2;
         }
         data[c] = num;
         c++;
