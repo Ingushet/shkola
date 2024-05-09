@@ -4,8 +4,8 @@ int main(){
     int n, m;
     if(scanf("%d %d", &n, &m) != 2 || n < 1 || m < 1){
         printf("n/a");
+        return 0;
     }
-    else{
     int **matrix = (int**)malloc(sizeof(int*) * n);
     int *ptr = (int*)malloc(sizeof(int)* n * m);
     for(int i = 0; i < n; i++){
@@ -30,9 +30,8 @@ int main(){
         if(j != m - 1){printf(" ");}
     }}
 
-    free(ptr);
     free(matrix);
-    }
+    free(ptr);
     return 0;
 
 }
