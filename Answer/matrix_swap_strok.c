@@ -29,6 +29,9 @@ int main(){
         printf("%d", matrix[i][j]);
         if(j != m - 1){printf(" ");}
     }}
+
+    free(ptr);
+    free(matrix);
     }
     return 0;
 
